@@ -1,6 +1,6 @@
 # syntax=docker/dockerfile:1
 
-FROM ghcr.io/linuxserver/baseimage-debian:trixie AS resynth
+FROM ghcr.io/linuxserver-playground/baseimage-debian:trixie AS resynth
 
 RUN \
   echo "**** install build deps ****" && \
@@ -29,7 +29,7 @@ RUN \
   rm -Rf /buildout/usr/local
 
 # runtime stage
-FROM ghcr.io/linuxserver/baseimage-selkies:debiantrixie
+FROM ghcr.io/linuxserver-playground/baseimage-selkies:debiantrixie
 
 # set version label
 ARG BUILD_DATE
