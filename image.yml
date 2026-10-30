@@ -9,6 +9,11 @@ upstream:
   url: https://www.gimp.org/
   version:
     type: os
+  sponsor:
+  - name: GIMP donating page
+    url: https://www.gimp.org/donating/
+  - name: GIMP on Liberapay
+    url: https://liberapay.com/GIMP/
 
 release:
   branch: master
